@@ -1,0 +1,73 @@
+/* Global Styles */
+
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Make sure everything is full width */
+html, body, #root {
+  height: 100%;
+}
+
+/* App Container */
+.app-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f6f8fc 0%, #e9ecef 100%);
+  color: #4f46e5;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+  height: 8px; /* Set the height of the scrollbar (horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b8cbd; /* Set the color of the scrollbar thumb */
+  border-radius: 4px; /* Make the thumb round */
+  border: 2px solid #f0f2f5; /* Add a border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563; /* Change color on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Set the track (background) color of the scrollbar */
+  border-radius: 4px; /* Make the track rounded */
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #d1d5db; /* Slightly darker track color when hovering */
+}
+
+/* Optional: Customize scrollbars for vertical or horizontal scroll separately */
+::-webkit-scrollbar-vertical {
+  width: 8px;
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 8px;
+}

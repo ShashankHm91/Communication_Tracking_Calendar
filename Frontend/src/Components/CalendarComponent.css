@@ -1,0 +1,113 @@
+/* Wrapper for the Calendar */
+.calendar-wrapper {
+  height: 100%;
+  padding: 25px;
+  height: auto;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin: 20px;
+}
+
+/* Toolbar Customization */
+.custom-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: linear-gradient(to right, #e3f2fd 0%, #e0f7fa 100%);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.toolbar-left,
+.toolbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.toolbar-center h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #1a237e;
+}
+
+.custom-toolbar button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #e3f2fd;
+  color: #1a237e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-toolbar button:hover {
+  background: #bbdefb;
+  color: #0d47a1;
+}
+
+.custom-toolbar button.active {
+  background: #42a5f5;
+  color: white;
+}
+
+/* Events Customization */
+.rbc-event {
+  background: linear-gradient(45deg, #3f51b5 0%, #5c6bc0 100%) !important;
+  border: none !important;
+  padding: 5px 8px !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 4px rgba(63, 81, 181, 0.2);
+  transition: all 0.3s ease !important;
+}
+
+.rbc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(63, 81, 181, 0.3);
+  background: linear-gradient(45deg, #3949ab 0%, #3f51b5 100%) !important;
+}
+
+.rbc-today {
+  background-color: #e8eaf6 !important;
+}
+
+.rbc-month-view {
+  border: 1px solid #c5cae9;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rbc-header {
+  padding: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #1a237e;
+  background: linear-gradient(to bottom, #e3f2fd 0%, #bbdefb 100%);
+  border-bottom: 2px solid #c5cae9 !important;
+}
+
+.rbc-off-range-bg {
+  background-color: #e8f5e9 !important;
+  opacity: 0.8;
+}
+
+.rbc-time-header {
+  background: linear-gradient(to bottom, #e3f2fd 0%, #bbdefb 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .toolbar-left,
+  .toolbar-right {
+    width: 100%;
+    justify-content: center;
+  }
+}
